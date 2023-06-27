@@ -10,20 +10,16 @@ Question 2:  What are the top five categories by revenue?
 Question 3:  What is the top-selling candy product?
 
 
-## Installation
+## Answers
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `mtba` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:mtba, "~> 0.1.0"}
-  ]
-end
+```sh
+mix deps.get && iex -S mix
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/mtba>.
+Then when in the REPL run the following:
 
+```sh
+Mtba.individual_sales() # question 1
+Mtba.top_five_categories_by_revenue() # question 2
+Mtba.top_five_categories_by_revenue() # question 2
+```
